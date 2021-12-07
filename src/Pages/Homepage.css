@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Lobster+Two&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Lobster+Two&family=Patrick+Hand&family=Tillana&display=swap");
+@import "react-slideshow-image/dist/styles.css";
+
+#about-container {
+  display: flex;
+}
+
+#headpic {
+  height: 7cm;
+  width: auto;
+  border-radius: 5cm;
+  margin: 1%;
+}
+
+main {
+  margin: 100px auto;
+  position: relative;
+  padding: 10px 5px;
+  background: hsla(0, 0%, 100%, 0.3);
+  font-size: 20px;
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  border-radius: 10px;
+  width: 85%;
+  box-shadow: 5px 3px 30px black;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  margin: -35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.para {
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+  font-size: 0.5cm;
+  text-shadow: black;
+  text-shadow: 0 0 10px #041712, 0 0 20px rgb(1 7 14), 0 0 40px rgb(17 1 14),
+    0 0 80px rgb(3 28 29);
+  text-align: center;
+}
+
+input {
+  background-color: transparent;
+}
+textarea {
+  background-color: transparent;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  position: relative;
+}
+.form-item {
+  grid-template-columns: 30% 30% 30%;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+.card-title {
+  background-image: linear-gradient(to bottom right, white, turquoise);
+  color: black;
+  text-align: center;
+  border: solid white;
+  border-radius: 2mm;
+  margin-top: 0;
+}
+
+.header-text {
+  margin-top: 0;
+  padding: 2%;
+  padding-left: 0;
+  font-family: "Lobster Two", cursive;
+  font-size: 5rem;
+  --interval: 1s;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 10px #3dffca, 0 0 20px rgb(117 171 227),
+    0 0 40px rgb(17 1 14), 0 0 80px rgb(3 28 29);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  color: white;
+  color: rgb(150, 38, 150);
+  --color1: rgb(155, 12, 151);
+  --color2: rgb(234, 167, 222);
+  --color3: rgb(255, 30, 203);
+  --color4: rgb(222, 15, 53);
+  border-bottom: solid white;
+}
+#experience-card {
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px gray;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 10px;
+  row-gap: 1px;
+  justify-content: center;
+  margin-top: 1cm;
+  height: fit-content;
+}
+
+#header-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  height: 2cm;
+  width: 2cm;
+  border-radius: 3cm;
+  padding: 3%;
+  padding-right: 0;
+}
+
+body {
+  background: #3dffca;
+  background: -webkit-linear-gradient(bottom left, #3dffca, #ff01b5);
+  background: -moz-linear-gradient(bottom left, #3dffca, #ff01b5);
+  background: linear-gradient(to top right, #3dffca, #ff01b5);
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+.standard-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+button.hover {
+  background-color: goldenrod;
+}
+
+h3.standard-text {
+  font-size: 2rem;
+  text-shadow: 0 0 10px #3dffca, 0 0 20px rgb(117 171 227),
+    0 0 40px rgb(17 1 14), 0 0 80px rgb(3 28 29);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  color: white;
+  color: rgb(150, 38, 150);
+  --color1: rgb(155, 12, 151);
+  --color2: rgb(234, 167, 222);
+  --color3: rgb(255, 30, 203);
+  --color4: rgb(222, 15, 53);
+  text-decoration: underline solid white;
+}
+
+#about-me {
+  font-family: "Tillana", cursive;
+}
+
+#topbutt {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.nav {
+  background-image: linear-gradient(to bottom right, white, turquoise);
+  border: solid goldenrod;
+  padding: 3mm;
+  font-size: 5mm;
+  border-radius: 3mm;
+  color: rgb(150, 38, 150);
+  font-weight: bold;
+  font-family: "Tillana", cursive;
+}
+
+button:hover,
+button:active {
+  background-image: linear-gradient(to bottom right, white, rgb(255, 41, 184));
+  color: #090909;
+  border-color: #f0ff25;
+  cursor: pointer;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
