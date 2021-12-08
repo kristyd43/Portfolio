@@ -6,10 +6,12 @@ import AboutMe from "../components/aboutMe/aboutMe";
 import Experience from "../components/Experience/Experience";
 import Contact from "../components/Contact/Contact";
 import { Link } from "react-scroll";
+import ExternalLink from "../components/externalLink/ExternalLink";
 
 const Header = () => {
   return (
     <div id="header">
+      <ExternalLink />
       <div id="header-container">
         <img id="logo" src={profileLogo} />
         <h3 class="header-text" id="top">

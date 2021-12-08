@@ -11,15 +11,21 @@ const Contact = () => {
           <h1 class="para">Let's Talk...</h1>
           <form action="https://formspree.io/f/xvolpebe" method="post">
             <div class="form-item">
-              <label for="name">Name: </label>
+              <label class="para" for="name">
+                Name:{" "}
+              </label>
               <input type="text" id="name" name="name" />
             </div>
             <div class="form-item">
-              <label for="email">Email: </label>
+              <label class="para" for="email">
+                Email:{" "}
+              </label>
               <input type="text" id="email" name="email" />
             </div>
             <div class="form-item">
-              <label for="message">Message: </label>
+              <label class="para" for="message">
+                Message:{" "}
+              </label>
               <textarea type="text" id="message" name="message" />
             </div>
             <div class="form-item">

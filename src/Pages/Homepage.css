@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Lobster+Two&family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Lobster+Two&family=Patrick+Hand&family=Tillana&display=swap");
 @import "react-slideshow-image/dist/styles.css";
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Lobster+Two&family=Patrick+Hand&family=Raleway:ital,wght@1,200&family=Tillana&display=swap");
 
 #about-container {
   display: flex;
@@ -43,15 +44,24 @@ main::before {
 
 .para {
   color: white;
-
+  font-family: "Raleway", sans-serif;
   display: flex;
 
   justify-content: center;
   text-align: center;
   font-size: 0.5cm;
-  text-shadow: black;
-  text-shadow: 0 0 10px #041712, 0 0 20px rgb(1 7 14), 0 0 40px rgb(17 1 14),
+  text-shadow: 0 0 10px #000000, 0 0 20px rgb(0 0 0), 0 0 40px rgb(32 17 29),
     0 0 80px rgb(3 28 29);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  color: rgb(0, 0, 0);
+  color: rgb(184, 255, 251);
+  font-weight: 900;
+  --color1: rgb(155, 12, 151);
+  --color2: rgb(153, 70, 138);
+  --color3: rgb(255, 30, 203);
+  --color4: rgb(222, 15, 53);
   text-align: center;
 }
 
@@ -93,15 +103,15 @@ form {
   --interval: 1s;
   display: flex;
   justify-content: center;
-  text-shadow: 0 0 10px #3dffca, 0 0 20px rgb(117 171 227),
+  text-shadow: 0 0 10px #258f73, 0 0 20px rgb(117 171 227),
     0 0 40px rgb(17 1 14), 0 0 80px rgb(3 28 29);
   will-change: filter, color;
   filter: saturate(60%);
   animation: flicker steps(100) var(--interval) 1s infinite;
   color: white;
-  color: rgb(150, 38, 150);
+  color: rgb(196, 143, 196);
   --color1: rgb(155, 12, 151);
-  --color2: rgb(234, 167, 222);
+  --color2: rgb(153, 70, 138);
   --color3: rgb(255, 30, 203);
   --color4: rgb(222, 15, 53);
   border-bottom: solid white;
@@ -140,10 +150,11 @@ form {
 }
 
 body {
-  background: #3dffca;
+  /* background: #3dffca;
   background: -webkit-linear-gradient(bottom left, #3dffca, #ff01b5);
   background: -moz-linear-gradient(bottom left, #3dffca, #ff01b5);
-  background: linear-gradient(to top right, #3dffca, #ff01b5);
+  background: linear-gradient(to top right, #3dffca, #ff01b5); */
+  background-image: url("https://wallpapercave.com/wp/wp2229438.jpg");
   height: 100%;
   padding-bottom: 5%;
 }
@@ -160,6 +171,7 @@ button.hover {
 
 h3.standard-text {
   font-size: 2rem;
+
   text-shadow: 0 0 10px #3dffca, 0 0 20px rgb(117 171 227),
     0 0 40px rgb(17 1 14), 0 0 80px rgb(3 28 29);
   will-change: filter, color;
@@ -201,6 +213,33 @@ button:active {
   color: #090909;
   border-color: #f0ff25;
   cursor: pointer;
+}
+
+#external-link {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#ex-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#git-butt {
+  margin-top: 20%;
+}
+
+.external-butt {
+  background-image: linear-gradient(to bottom right, white, turquoise);
+  border: solid goldenrod;
+  padding: 1mm;
+  font-size: 3mm;
+  border-radius: 1mm;
+  color: rgb(150, 38, 150);
+  font-weight: bold;
+  font-family: "Tillana", cursive;
+  margin-left: 10%;
 }
 
 #nav-container {

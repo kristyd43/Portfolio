@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div id="header">
       <main>
-        <div id="about-me">
+        <div>
           <h3 class="standard-text">About Me</h3>
           <div id="about-container">
             <img id="headpic" alt="" src={Head} />
